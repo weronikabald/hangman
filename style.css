@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'PressStart2P-Regular';
+    src: url('PressStart2P-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ConcertOne-Regular';
+    src: url('ConcertOne-Regular.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    font-family: 'ConcertOne-Regular', sans-serif;
+    text-align: center;
+    background-image: url('peach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Default text color */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fbd8e7; /* Pastel pink background */
+    border-radius: 15px; /* Rounded corners */
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    background-color: #fbd8e7; /* Pastel pink background */
+    border: 2px solid white; /* White border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+}
+
+h1, #username {
+    font-family: 'PressStart2P-Regular', sans-serif;
+    color: orange; /* Orange color for headers and username */
+}
+
+#wordContainer {
+    margin: 20px;
+    font-size: 24px;
+}
+
+#letters button, #reset, #setName {
+    font-family: 'ConcertOne-Regular', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px; /* Rounded edges for buttons */
+    border: none;
+    color: white; /* White text on buttons */
+    background-color: #f78fb3; /* Light pink background for buttons */
+    cursor: pointer;
+}
+
+#letters button:hover, #reset:hover, #setName:hover {
+    background-color: #f497a9; /* Slightly darker pink on hover */
+}
+
+#hangmanImage {
+    margin-top: 20px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"] {
+    border-radius: 10px; /* Rounded edges for input field */
+    border: none;
+    padding: 5px;
+    color: white; /* White text in input field */
+    background-color: #f78fb3; /* Light pink background for input field */
+}
+
+input[type="text"]::placeholder {
+    font-family: 'ConcertOne-Regular', sans-serif;
+    color: white;
+    opacity: 1;
+}
+
+#letters button.clicked {
+    display: none; /* Make the button disappear after being clicked */
+}
